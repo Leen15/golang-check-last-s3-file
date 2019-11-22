@@ -13,14 +13,14 @@ import (
 )
 
 type config struct {
-    Bucket					string		`env:"BUCKET"`
-    Prefix					string		`env:"PATH_PREFIX"`
-    Timezone				string		`env:"TIMEZONE"`
-    OlderThanMinutes		int			`env:"OLDER_THAN_MINUTES"`
-    SmallerThanMegabytes	int64		`env:"SMALLER_THAN_MEGABYTES"`
-    AwsAccessKeyID			string		`env:"AWS_ACCESS_KEY_ID"`
-    AwsSecretAccessKey		string		`env:"AWS_SECRET_ACCESS_KEY"`
-    AwsRegion				string		`env:"AWS_REGION"`
+    Bucket                  string      `env:"BUCKET"`
+    Prefix                  string      `env:"PATH_PREFIX"`
+    Timezone                string      `env:"TIMEZONE"`
+    OlderThanMinutes        int         `env:"OLDER_THAN_MINUTES"`
+    SmallerThanMegabytes    int64       `env:"SMALLER_THAN_MEGABYTES"`
+    AwsAccessKeyID          string      `env:"AWS_ACCESS_KEY_ID"`
+    AwsSecretAccessKey      string      `env:"AWS_SECRET_ACCESS_KEY"`
+    AwsRegion               string      `env:"AWS_REGION"`
 }
 
 func main() {
