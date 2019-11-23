@@ -59,7 +59,7 @@ func main() {
 
     if (len(resp.Contents) == 0) {
         fmt.Println("[ERROR] No files in bucket. ")
-        os.Exit(1)
+        os.Exit(0)
     }
 
     mostRecentObj := *resp.Contents[0]
@@ -98,7 +98,7 @@ func main() {
     }
 
     if (error) {
-        os.Exit(1)
+        os.Exit(0)
     }
 
     fmt.Println("[SUCCESS] The file is OK." )	
